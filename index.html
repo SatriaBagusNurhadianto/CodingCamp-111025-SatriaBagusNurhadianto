@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="https://imgur.com/DymX8WZ.png" 
+                     alt="Company Logo" class="logo-img">
+                <h1 class="logo-text">Velgrith Company</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-target="home">Home</a></li>
+                <li><a href="#portfolio" class="nav-link" data-target="portfolio">Portfolio</a></li>
+                <li><a href="#message" class="nav-link" data-target="message">Message Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="page active">
+        <div class="container">
+            <h2>Hi RevoU, Welcome To my Company Website</h2>
+            <p>Ini adalah website buat tugas RevoU</p>
+            <div class="banner">
+                <img src="https://imgur.com/jm5o7hh.jpg" 
+                     alt="Company Banner" class="banner-img">
+                <p class="banner-caption">Velgrith Company</p>
+            </div>
+            
+            <div class="profile">
+                <h3>Our Profile</h3>
+                <div class="features">
+                    <div class="feature">
+                        <span class="feature-icon">🚀</span>
+                        <h4>Innovative</h4>
+                        <p>Teknologi terdepan untuk bisnis masa kini, dan terus berkembang lebih jauh</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">💡</span>
+                        <h4>Creative</h4>
+                        <p>Desain kreatif dan user-friendly, karena kami sedikit tertarik akan desain</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">⚡</span>
+                        <h4>Fast</h4>
+                        <p>Optimasi kecepatan terbaik, dan dapat bersaing dengan perusahaan lain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="page">
+        <div class="container">
+            <h2>Our Headquarter</h2>
+            <div class="cities">
+                <div class="city">
+                    <div class="city-icon">🏢</div>
+                    <h3>Jakarta</h3>
+                    <p>Kantor pusat utama kami berada di sekitaran daerah Jakarta</p>
+                </div>
+                <div class="city">
+                    <div class="city-icon">🌋</div>
+                    <h3>Bandung</h3>
+                    <p>Creative hub milik perusahaan kami terdapat di lokasi Bandung</p>
+                </div>
+                <div class="city">
+                    <div class="city-icon">🌊</div>
+                    <h3>Surabaya</h3>
+                    <p>Daerah regional office untuk perusahaan kami berada pada daerah Surabaya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Us Section -->
+    <section id="message" class="page">
+        <div class="container">
+            <h2>Message Us</h2>
+            <div class="message-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label>Name *</label>
+                        <input type="text" id="name" placeholder="Masukkan nama lengkap" required>
+                        <div class="error" id="nameError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Tanggal Lahir *</label>
+                        <input type="date" id="birthdate" required>
+                        <div class="error" id="birthdateError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Jenis Kelamin *</label>
+                        <div class="gender-options">
+                            <label>
+                                <input type="radio" name="gender" value="Laki-Laki" required>
+                                Laki-Laki
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="Perempuan" required>
+                                Perempuan
+                            </label>
+                        </div>
+                        <div class="error" id="genderError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Pesan *</label>
+                        <textarea id="messageText" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+                        <div class="error" id="messageError"></div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+
+                <div class="results">
+                    <div class="current-time">
+                        <strong>Current Time:</strong>
+                        <span id="currentTime">Loading...</span>
+                    </div>
+                    
+                    <div class="result-box">
+                        <h4>Submitted Data</h4>
+                        <div class="result-item">
+                            <strong>Name:</strong> <span id="resultName">-</span>
+                        </div>
+                        <div class="result-item">
+                            <strong>Tanggal Lahir:</strong> <span id="resultBirthdate">-</span>
+                        </div>
+                        <div class="result-item">
+                            <strong>Jenis Kelamin:</strong> <span id="resultGender">-</span>
+                        </div>
+                        <div class="result-item">
+                            <strong>Pesan:</strong> <span id="resultMessage">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 created by Satria Bagus Nurhadianto</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
